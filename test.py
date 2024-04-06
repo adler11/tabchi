@@ -7,10 +7,12 @@ import urllib.error
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-bot_token = '6433280815:AAGoxHQ0-DJST0E3KXHMlvoxcTAGumnxcME'
+api_id = 4634028
+api_hash = 'ce8e3cd6539ba91704627d94c3ba44dd'
+bot_token = '5149828758:AAE_sgBHCdw3_DAufY1zRyqY5mmaz0xdUJk'
 
 # Initialize the Pyrogram client
-app = Client("youtube_downloader",bot_token=bot_token)
+app = Client("y", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # Function to extract video ID from YouTube link
 def extract_video_id(link):
